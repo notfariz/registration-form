@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center px-4"
+  style="background-image: url('./images/registration-form-bg.jpg');">
+
+  <form id="registrationForm"
+    class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg w-full max-w-md space-y-5 border border-orange-300">
+    <h2 class="text-3xl font-bold text-center text-orange-600">Registration Form</h2>
+
+    <!-- Name Field -->
+    <div class="transition-all duration-300 hover:scale-105 hover:bg-orange-50 rounded-md p-1">
+      <label for="name" class="block text-sm font-medium text-orange-700">Name</label>
+      <input id="name" type="text" placeholder="John Doe"
+        class="mt-1 w-full px-3 py-2 border border-orange-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400" />
+      <p id="nameError" class="mt-1 text-sm text-red-600 hidden">Name is required.</p>
+    </div>
+
+    <!-- Email Field -->
+    <div class="transition-all duration-300 hover:scale-105 hover:bg-orange-50 rounded-md p-1">
+      <label for="email" class="block text-sm font-medium text-orange-700">Email</label>
+      <input id="email" type="email" placeholder="example@domain.com"
+        class="mt-1 w-full px-3 py-2 border border-orange-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400" />
+      <p id="emailError" class="mt-1 text-sm text-red-600 hidden">Enter a valid email.</p>
+    </div>
+
+    <!-- Password Field -->
+    <div class="transition-all duration-300 hover:scale-105 hover:bg-orange-50 rounded-md p-1">
+      <label for="password" class="block text-sm font-medium text-orange-700">Password</label>
+      <input id="password" type="password" placeholder="••••••"
+        class="mt-1 w-full px-3 py-2 border border-orange-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-400" />
+      <p id="passwordError" class="mt-1 text-sm text-red-600 hidden">Minimum 6 characters required.</p>
+    </div>
+
+    <!-- Submit -->
+    <button id="submitBtn" type="submit"
+      class="w-full bg-orange-500 hover:bg-orange-600 transition-all duration-300 hover:scale-105 text-white py-2 rounded disabled:opacity-50 transition disabled:cursor-not-allowed"
+      disabled>
+      Submit
+    </button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+/* Optional for customization — Tailwind handles most styling */
+body {
+  font-family: system-ui, sans-serif;
+}
